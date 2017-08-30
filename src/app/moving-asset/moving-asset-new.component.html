@@ -1,0 +1,194 @@
+<app-navbar></app-navbar>
+
+<app-googlemaps></app-googlemaps>
+
+<div class="col-xs-12 startbutton">
+
+         <button type="button" class="btn btn-outline-primary" [disabled]="isButtonDisabled" (click)="onClicked(); isButtonDisabled=true ">
+            <i class="material-icons" style="font-size:35px ; color:darkblue">drive_eta</i>
+          </button>
+
+          <button id="stop" type="button" (click)="stopjourney()" class="btn btn-outline-primary">
+            <i class="material-icons" style="font-size:35px; color:red">cancel</i>
+          </button>
+
+          <button type="button" (click)="updateWaypoint()" class="btn btn-outline-primary">
+            <i style="font-size:30px; color:green">Update</i>
+          </button>
+          <select id="floating-panel" [(ngModel)]="selectedCountry" (input)="changeCountry($event)" >
+            <option  value="USA" selected="selected">USA</option>
+            <option  value="Europe">Europe</option>
+          </select>
+          <!-- <div>
+          <button id="Waypoint" type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">
+            Waypoint Info
+          </button>
+
+          </div> -->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">
+          Waypoints Information
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!--//End of header content-->
+      <div class="modal-body">
+
+        <div class="row">
+
+          <div class="col-sm-6" *ngFor="let waypoint of weatherData.waypoint">
+
+            <div class="card" >
+
+                <div class="current">
+                  <div class="info">
+                      <div>&nbsp;</div>
+                      <div class="city">{{waypoint.title}}</div>
+                      <!-- <div class="wind"><small><small>WIND:</small></small> 22 km/h</div> -->
+                      <div>&nbsp;</div>
+                      <div class="temp">{{waypoint.day1.day_temp}}&deg; <small>C</small></div>
+
+                      <div class="icon">
+                        <img src={{waypoint.day1.weather.icon}} />
+                      </div>
+                  </div>
+
+              </div>
+              <div class="card-block">
+                <div class="future">
+                  <div class="day" >
+                      <h3>Day 1</h3>
+                      <p><img src={{waypoint.day1.weather.icon}} />
+                        <br> <span class="highTemp">{{waypoint.day1.max_temp}}&#176;</span>
+                        <br> <span class="lowTemp">{{waypoint.day1.min_temp}}&#176;</span>
+                      </p>
+                  </div>
+                  <div class="day" >
+                      <h3>Day 2</h3>
+                      <p><img src={{waypoint.day2.weather.icon}} />
+                        <br> <span class="highTemp">{{waypoint.day2.max_temp}}&#176;</span>
+                        <br> <span class="lowTemp">{{waypoint.day2.min_temp}}&#176;</span>
+                      </p>
+                  </div>
+                  <div class="day" >
+                      <h3>Day 3</h3>
+                      <p><img src={{waypoint.day3.weather.icon}} />
+                        <br> <span class="highTemp">{{waypoint.day3.max_temp}}&#176;</span>
+                        <br> <span class="lowTemp">{{waypoint.day3.min_temp}}&#176;</span>
+                      </p>
+                  </div>
+                  <div class="day" >
+                      <h3>Day 4</h3>
+                      <p><img src={{waypoint.day4.weather.icon}} />
+                        <br> <span class="highTemp">{{waypoint.day4.max_temp}}&#176;</span>
+                        <br> <span class="lowTemp">{{waypoint.day4.min_temp}}&#176;</span>
+                      </p>
+                  </div>
+                  <div class="day last" >
+                      <h3>Day 5</h3>
+                      <p><img src={{waypoint.day1.weather.icon}} />
+                        <br> <span class="highTemp">{{waypoint.day5.max_temp}}&#176;</span>
+                        <br> <span class="lowTemp">{{waypoint.day5.min_temp}}&#176;</span>
+                      </p>
+                  </div>
+              </div>
+              </div>
+            </div>
+
+
+          </div>
+
+
+       </div>
+        <!--//End of row-->
+
+      </div>
+      <!--//End of body-->
+
+    </div>
+    <!--//Model content-->
+  </div>
+  <!--//Model dialogue-->
+</div>
+<!--//Model-->
+
+</div>
+<!-- Waypoint information display  -->
+<div class="col-xs-12 startbutton">
+
+  <div class="row">
+
+    <div class="col-sm-3" *ngFor="let waypoint of weatherData.waypoint">
+
+      <div class="card" >
+
+          <div class="current">
+            <div class="info">
+                <div>&nbsp;</div>
+                <div class="city">{{waypoint.title}}</div>
+                <!-- <div class="wind"><small><small>WIND:</small></small> 22 km/h</div> -->
+                <div>&nbsp;</div>
+                <div class="temp">{{waypoint.day1.day_temp}}&deg; <small>C</small></div>
+
+                <div class="icon">
+                  <img src={{waypoint.day1.weather.icon}} />
+                </div>
+            </div>
+
+        </div>
+        <div class="card-block">
+          <div class="future">
+            <div class="day" >
+                <h3>Day 1</h3>
+                <p><img src={{waypoint.day1.weather.icon}} />
+                  <br> <span class="highTemp">{{waypoint.day1.max_temp}}&#176;</span>
+                  <br> <span class="lowTemp">{{waypoint.day1.min_temp}}&#176;</span>
+                </p>
+            </div>
+            <div class="day" >
+                <h3>Day 2</h3>
+                <p><img src={{waypoint.day2.weather.icon}} />
+                  <br> <span class="highTemp">{{waypoint.day2.max_temp}}&#176;</span>
+                  <br> <span class="lowTemp">{{waypoint.day2.min_temp}}&#176;</span>
+                </p>
+            </div>
+            <div class="day" >
+                <h3>Day 3</h3>
+                <p><img src={{waypoint.day3.weather.icon}} />
+                  <br> <span class="highTemp">{{waypoint.day3.max_temp}}&#176;</span>
+                  <br> <span class="lowTemp">{{waypoint.day3.min_temp}}&#176;</span>
+                </p>
+            </div>
+            <div class="day" >
+                <h3>Day 4</h3>
+                <p><img src={{waypoint.day4.weather.icon}} />
+                  <br> <span class="highTemp">{{waypoint.day4.max_temp}}&#176;</span>
+                  <br> <span class="lowTemp">{{waypoint.day4.min_temp}}&#176;</span>
+                </p>
+            </div>
+            <div class="day last" >
+                <h3>Day 5</h3>
+                <p><img src={{waypoint.day1.weather.icon}} />
+                  <br> <span class="highTemp">{{waypoint.day5.max_temp}}&#176;</span>
+                  <br> <span class="lowTemp">{{waypoint.day5.min_temp}}&#176;</span>
+                </p>
+            </div>
+        </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+ </div>
+  <!--//End of row-->
+
+</div>
+<!--<app-test-wayponts></app-test-wayponts>-->
+<app-footer></app-footer>

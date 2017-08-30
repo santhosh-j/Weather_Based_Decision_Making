@@ -1,0 +1,27 @@
+.navbar{
+    /*background-color: darkcyan;*/
+    background-color : #263238;
+    margin-bottom: 30px;
+}
+
+.navbar-brand{
+ color:white;
+}
+
+.navbar-nav .nav-link{
+ color:white;
+}
+.navbar-nav .nav-item  a:active {
+  color: red;
+}
+
+.navbar .navbar-nav .nav-item  a:not(.navbar-brand):hover{
+  color:#FFAB91;
+}
+
+
+
+
+.navbar-nav .nav-link{
+ color:white;
+}

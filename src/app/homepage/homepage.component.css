@@ -1,0 +1,92 @@
+/* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color:#263238;
+    padding-left: 32%;
+    color: white;
+    text-align: center;
+    line-height: 0px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 3px;
+    font-size: 15px;
+}
+
+/* Modal Carousel */
+.carousel-inner .carousel-item {
+  height:100%;
+  width:100%;
+}
+/*#carouselExampleIndicators{
+    height:80% !important;
+  width:100%;
+}*/
+
+.carousel-inner .carousel-item .carousel-caption h3{
+  color:#ff8000;
+  font-size: 30px;
+}
+.carousel-inner .carousel-item .carousel-caption p{
+  color:	#0080ff;
+  font-size: 16px;
+}
+.carousel-control-prev-icon{
+/*background-color: black;*/
+color:black !important;
+}
+.carousel-control-next-icon{
+/*background-color:black;*/
+}
+
+.d-block{
+  width: 100%;
+}
+
+/* Modal Footer */
+.row{
+  margin-top: 10px;
+  text-align: center;
+}
+.card-header{
+  font-size: 25px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #263238;
+  color:white;
+  padding-top: 3px;
+  padding-bottom: 1px;
+}
+.card-block{
+  background-color: 	#ECEFF1;
+  padding-top: 39px;
+}
+
+.card{
+  height: 240px;
+  margin-bottom: 10px;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    margin-top: 5px;
+    padding:0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: fadeAndScale;
+    animation-name: fadeAndScale;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s
+}
+
+/* Add Animation */
+@-webkit-keyframes fadeAndScale {
+           0% {opacity: 0;}
+           100% {opacity: 1;}
+        }
+
+        @keyframes fadeAndScale {
+           0% {opacity: 0;}
+           100% {opacity: 1;}
+        }

@@ -1,0 +1,74 @@
+.card .current{
+    margin : 3px 3px 3px 3px;
+    /*background-color: #80CBC4;*/
+    height: 181px;
+}
+.card {
+  background-color: #80CBC4;
+  margin-bottom: 5px;
+}
+
+        .future
+        {
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+            .future .day
+            {
+                flex-grow: 1;
+                text-align: center;
+                cursor: pointer;
+                border-right:.1em solid #d9d9d9;
+                /*line-height: 1.2;*/
+            }
+
+
+                 .future .day:hover
+                {
+                    color: #fff;
+                    background-color: #F68D2E;
+                }
+
+                .future .day h3
+                {
+                    /*text-transform: uppercase;*/
+                    font-size : 20px;
+                }
+
+                .future .day p
+                {
+                    font-size: 20px;
+                }
+
+                .highTemp {
+                font-weight:bold;
+                }
+                .lowTemp {
+                color: #8c8c8c;
+                }
+
+                .city , .wind {
+                    font-size: 24px;
+                    padding-left: 10px;
+                }
+
+
+                .temp{
+                    font-size: 32px;
+                    padding-left: 10px;
+                }
+
+                .icon{
+                    padding-left: 10px;
+                    font-size: 50px;
+                    margin-left: 101px;
+                    margin-top: -63px;
+                }
+
+#Waypoint
+{
+    float: right;
+    margin-top: -48px;
+    margin-right: 35em;
+}

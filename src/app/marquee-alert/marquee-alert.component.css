@@ -1,0 +1,9 @@
+.alert{
+    /*margin-bottom: 0px;*/
+    /*background: #fff;*/
+  background-color: lightcyan;
+
+    color: black;
+    padding: 5px 5px;
+    margin: 20px 2px 20px 2px ;
+    }

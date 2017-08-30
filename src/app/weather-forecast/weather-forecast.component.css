@@ -1,0 +1,254 @@
+.clear {
+  clear:both;
+}
+
+.row{
+  color: blue;
+}
+
+.cards{
+  /*border-style: dotted;*/
+  /*border-color:black;*/
+  padding: 2px 2px 2px 2px;
+  background: #fff;
+  border-radius: .1em;
+  /*margin-top: 100px;*/
+  /*min-height: 10px;*/
+}
+
+.city{
+  font-family: 'VT323', monospace;
+  /*//'Caveat Brush', cursive;;*/
+  font-weight: 250;
+  font-size: 1.2em;
+  color:#5b5b5b;
+  margin: 4px 14px;
+}
+.menu{
+  float: right;
+  font-family: 'VT323', monospace;
+  /*'Caveat Brush', cursive;;*/
+  font-size:.5em;
+  color:#5b5b5b;
+  /*margin-top:-.0em;*/
+  /*margin-right:-2em;*/
+  list-style:square;
+  padding-left: 95%;
+  margin-top: -31px;
+  line-height: 8px;
+}
+.sun {
+  width:4em;
+  height:4em;
+  border-radius: 2.5em;
+  background: #FBD80A;
+  margin-top: -0.8em;
+  margin-bottom: -11px;
+  margin-left:14px;
+
+}
+
+.temp {
+  /*float:right;*/
+  font-family: 'VT323', monospace;
+  /*'Caveat Brush', cursive;*/
+  font-weight: 200;
+  font-size: 5.5em;
+  /*margin-top:-.75em;*/
+  color:#5b5b5b;
+  padding-left:53%;
+  margin-top: -25%;
+  margin-bottom: -50px;
+  padding-top: 14px;
+}
+.variations {
+  font-family: 'VT323', monospace;
+  /*'Caveat Brush', cursive;*/
+  font-weight:300;
+  color:#8c8c8c;
+  list-style:none;
+  margin-left:-1em;  
+  margin-top :0;
+  margin-top :17px;
+}
+
+
+.mph {
+   font-size:.8em;
+}
+
+.speed:before {
+  content:url('http://i.imgur.com/luN0Jmq.png');
+}
+.forecast {
+  width:100%;
+  /*margin:0 auto;*/
+}
+
+.day {
+  display:block;
+  width: 20.5%;
+  height:9em;
+  float:left;
+  /*margin: 0 .375em .5em;*/
+  text-align:center;
+  font-family: 'VT323', monospace;
+  /*'Caveat Brush', cursive;*/
+  color: #5b5b5b;
+  border-right:.1em solid #d9d9d9;
+  line-height: 2;
+}
+.fri {
+  border-right:none;
+}
+.highTemp {
+  font-weight:bold;
+}
+.lowTemp {
+  color: #8c8c8c;
+}
+.cloudy {
+  content: url('http://i.imgur.com/0PIYfV8.png');
+}
+.sunny {
+  content: url('http://i.imgur.com/RdBr2SD.png');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.card {
+  width:20em;
+  min-height:22.5em;
+  background: #fff;
+  margin:1em auto;
+  border-radius: .2em;
+  padding-top:1em;
+  padding-left: 1em;
+  padding-right:1em;
+}
+.city {
+  font-family: 'Caveat Brush', cursive;;
+  font-weight: 300;
+  font-size: 1.8em;
+  color:#5b5b5b;
+}*/
+/*
+.menu {
+  float: right;
+  font-family: 'Caveat Brush', cursive;;
+  font-size:.5em;
+  color:#5b5b5b;
+  margin-top:-.09em;
+  margin-right:-2em;
+  list-style:square;
+  padding-left: 105%;
+  margin-top: -14%;
+  line-height: 8px;*/
+
+/*}
+.sun {
+  width:4em;
+  height:4em;
+  border-radius: 2.5em;
+  background: #FBD80A;
+  margin-top: 1em;
+  margin-bottom: -11px;
+}*/
+/*.temp {
+  float:right;
+  font-family: 'Caveat Brush', cursive;
+  font-weight: 200;
+  font-size: 8.5em;
+  margin-top:-.75em;
+  color:#5b5b5b;
+  padding-left: 46%;
+  margin-top: -38%;
+  margin-bottom: -50px;
+  padding-top: 14px;
+}
+.variations {
+  font-family: 'Caveat Brush', cursive;
+  font-weight:300;
+  color:#8c8c8c;
+  list-style:none;
+  margin-left:-2em;
+  
+}
+
+.mph {
+   font-size:.8em;
+}
+.speed:before {
+  content:url('http://i.imgur.com/luN0Jmq.png');
+}
+.forecast {
+  width:100%;
+  margin:0 auto;
+}*/
+/*.day {
+  display:block;
+  width: 20.5%;
+  height:9em;
+  float:left;
+  margin: 0 .375em .5em;
+  text-align:center;
+  font-family: 'Caveat Brush', cursive;
+  color: #5b5b5b;
+  border-right:.1em solid #d9d9d9;
+  line-height: 2;
+}
+.fri {
+  border-right:none;
+}
+.highTemp {
+  font-weight:bold;
+}
+.lowTemp {
+  color: #8c8c8c;
+}
+.cloudy {
+  content: url('http://i.imgur.com/0PIYfV8.png');
+}
+.sunny {
+  content: url('http://i.imgur.com/RdBr2SD.png');
+}*/
+
+
+
+
+
+
+/*
+
+.first{
+  background-color: lightgrey;
+}
+
+.second{
+background-color: darkslategrey;
+}
+
+.third{
+background-color: grey;
+}
+
+.fourth{
+ background-color: lightslategrey;
+}
+*/

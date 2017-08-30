@@ -1,0 +1,284 @@
+<app-navbar></app-navbar>
+
+<app-googlemaps></app-googlemaps>
+
+<div class="col-xs-12 startbutton">
+
+         <button type="button" class="btn btn-outline-primary" [disabled]="isButtonDisabled" (click)="onClicked(); isButtonDisabled=true ">
+            <i class="material-icons" style="font-size:35px ; color:darkblue">drive_eta</i>
+          </button>
+
+          <button id="stop" type="button" (click)="stopjourney()" class="btn btn-outline-primary">
+            <i class="material-icons" style="font-size:35px; color:red">cancel</i>
+          </button>
+          <div>
+          <button id="Waypoint" type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">
+            Waypoint Info
+          </button>
+          </div>
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">
+          Waypoints Information
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!--//End of header content-->
+      <div class="modal-body">
+
+        <div class="row">
+
+          <div class="col-sm-4">
+
+              <div class="card" >
+
+                  <div class="current">
+                    <div class="info">
+                        <div>&nbsp;</div>
+                        <div class="city"> WayPoint1</div>
+                        <!-- <div class="wind"><small><small>WIND:</small></small> 22 km/h</div> -->
+                        <div>&nbsp;</div>
+                        <div class="temp">67&deg; <small>F</small></div>
+
+                        <div class="icon">
+                        <span class="wi wi-day-sunny"></span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-block">
+                  <div class="future">
+                    <div class="day">
+                        <h3>Mon</h3>
+                        <p><span class="wi wi-day-cloudy"></span>
+                            <br> <span class="highTemp">79&#176;</span>
+                            <br> <span class="lowTemp">57&#176;</span>
+                        </p>
+                    </div>
+                    <div class="day">
+                        <h3>Tue</h3>
+                        <p><span class="wi wi-day-cloudy"></span>
+                            <br> <span class="highTemp">70&#176;</span>
+                            <br> <span class="lowTemp">50&#176;</span>
+                        </p>
+                    </div>
+                    <div class="day last">
+                        <h3>Wed</h3>
+                        <p><span class="wi wi-day-cloudy"></span>
+                            <br> <span class="highTemp">70&#176;</span>
+                            <br> <span class="lowTemp">51&#176;</span>
+                        </p>
+                    </div>
+                </div>
+                </div>
+              </div>
+
+          </div>
+
+<div class="col-sm-4">
+
+              <div class="card" >
+
+                  <div class="current">
+                    <div class="info">
+                        <div>&nbsp;</div>
+                        <div class="city"> WayPoint2</div>
+                        <!-- <div class="wind"><small><small>WIND:</small></small> 22 km/h</div> -->
+                        <div>&nbsp;</div>
+                        <div class="temp">60&deg; <small>F</small></div>
+
+                        <div class="icon">
+                        <span class="wi wi-day-sunny-overcast"></span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-block">
+                  <div class="future">
+                    <div class="day">
+                        <h3>Mon</h3>
+                        <p><span class="wi wi-day-cloudy"></span>
+                            <br> <span class="highTemp">77&#176;</span>
+                            <br> <span class="lowTemp">57&#176;</span>
+                        </p>
+                    </div>
+                    <div class="day">
+                        <h3>Tue</h3>
+                        <p><span class="wi wi-day-cloudy"></span>
+                            <br> <span class="highTemp">69&#176;</span>
+                            <br> <span class="lowTemp">50&#176;</span>
+                        </p>
+                    </div>
+                    <div class="day last">
+                        <h3>Wed</h3>
+                        <p><span class="wi wi-day-cloudy"></span>
+                            <br> <span class="highTemp">80&#176;</span>
+                            <br> <span class="lowTemp">57&#176;</span>
+                        </p>
+                    </div>
+                </div>
+                </div>
+              </div>
+
+          </div>
+
+          <div class="col-sm-4">
+              <div class="card" >
+                  <div class="current">
+                    <div class="info">
+                        <div>&nbsp;</div>
+                        <div class="city"> WayPoint3</div>
+                        <!-- <div class="wind"><small><small>WIND:</small></small> 22 km/h</div> -->
+                        <div>&nbsp;</div>
+                        <div class="temp">28&deg; <small>F</small></div>
+
+                        <div class="icon">
+                        <span class="wi wi wi-rain-mix"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-block">
+                  <div class="future">
+                    <div class="day">
+                        <h3>Mon</h3>
+                        <p><span class="wi wi-day-cloudy"></span>
+                            <br> <span class="highTemp">50&#176;</span>
+                            <br> <span class="lowTemp">40&#176;</span>
+                        </p>
+                    </div>
+                    <div class="day">
+                        <h3>Tue</h3>
+                        <p><span class="wi wi-day-cloudy"></span>
+                            <br> <span class="highTemp">79&#176;</span>
+                            <br> <span class="lowTemp">57&#176;</span>
+                        </p>
+                    </div>
+                    <div class="day last">
+                        <h3>Wed</h3>
+                        <p><span class="wi wi-day-cloudy"></span>
+                            <br> <span class="highTemp">80&#176;</span>
+                            <br> <span class="lowTemp">50&#176;</span>
+                        </p>
+                    </div>
+                </div>
+                </div>
+              </div>
+
+          </div>
+
+
+          <div class="col-sm-4">
+
+              <div class="card" >
+
+                  <div class="current">
+                    <div class="info">
+                        <div>&nbsp;</div>
+                        <div class="city"> WayPoint4</div>
+                        <!-- <div class="wind"><small><small>WIND:</small></small> 22 km/h</div> -->
+                        <div>&nbsp;</div>
+                        <div class="temp">67&deg; <small>F</small></div>
+
+                        <div class="icon">
+                        <span class="wi wi-day-sunny"></span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-block">
+                  <div class="future">
+                    <div class="day">
+                        <h3>Mon</h3>
+                        <p><span class="wi wi-day-cloudy"></span>
+                            <br> <span class="highTemp">79&#176;</span>
+                            <br> <span class="lowTemp">57&#176;</span>
+                        </p>
+                    </div>
+                    <div class="day">
+                        <h3>Tue</h3>
+                        <p><span class="wi wi-day-cloudy"></span>
+                            <br> <span class="highTemp">79&#176;</span>
+                            <br> <span class="lowTemp">57&#176;</span>
+                        </p>
+                    </div>
+                    <div class="day last">
+                        <h3>Wed</h3>
+                        <p><span class="wi wi-day-cloudy"></span>
+                            <br> <span class="highTemp">79&#176;</span>
+                            <br> <span class="lowTemp">57&#176;</span>
+                        </p>
+                    </div>
+                </div>
+                </div>
+              </div>
+
+          </div>
+
+          <div class="col-sm-4">
+              <div class="card" >
+                  <div class="current">
+                    <div class="info">
+                        <div>&nbsp;</div>
+                        <div class="city"> WayPoint5</div>
+                        <!-- <div class="wind"><small><small>WIND:</small></small> 22 km/h</div> -->
+                        <div>&nbsp;</div>
+                        <div class="temp">28&deg; <small>F</small></div>
+
+                        <div class="icon">
+                        <span class="wi wi wi-rain-mix"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-block">
+                  <div class="future">
+                    <div class="day">
+                        <h3>Mon</h3>
+                        <p><span class="wi wi-day-cloudy"></span>
+                            <br> <span class="highTemp">50&#176;</span>
+                            <br> <span class="lowTemp">40&#176;</span>
+                        </p>
+                    </div>
+                    <div class="day">
+                        <h3>Tue</h3>
+                        <p><span class="wi wi-day-cloudy"></span>
+                            <br> <span class="highTemp">79&#176;</span>
+                            <br> <span class="lowTemp">57&#176;</span>
+                        </p>
+                    </div>
+                    <div class="day last">
+                        <h3>Wed</h3>
+                        <p><span class="wi wi-day-cloudy"></span>
+                            <br> <span class="highTemp">80&#176;</span>
+                            <br> <span class="lowTemp">50&#176;</span>
+                        </p>
+                    </div>
+                </div>
+                </div>
+              </div>
+
+          </div>
+
+
+
+       </div>
+        <!--//End of row-->
+
+      </div>
+      <!--//End of body-->
+
+    </div>
+    <!--//Model content-->
+  </div>
+  <!--//Model dialogue-->
+</div>
+<!--//Model-->
+
+
+</div>
+
+<!--<app-test-wayponts></app-test-wayponts>-->
+<app-footer></app-footer>
